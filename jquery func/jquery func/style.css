@@ -1,0 +1,28 @@
+main{
+    width: 600px;
+    height: 500px;
+    background-color:gray;
+    display: inline-block;
+}
+.red{
+    background-color: red;
+}
+h1{
+position: relative;
+left: 160px;
+}
+p{
+    position: relative;
+    left: 150px;
+    bottom: 50px;
+}
+button{
+    margin-left: 20px;
+}
+hr{
+    height: 5px;
+    width: 550px;
+    border-radius: 3px;
+    background-color: black;
+}
+    

@@ -1,0 +1,13 @@
+var sum=0;
+var hiarr=[6,3,5,1,2,4]
+for(var i=0;i<hiarr.length;i++){
+var num=hiarr[i];
+sum=sum+num;
+console.log("num "+num, "sum "+sum );
+////////////////////////////////////////////////////
+var arr=[6,3,5,1,2,4];
+for(var i=0;i<arr.length;i++){
+
+mult=arr[i]*i;
+console.log(mult);
+}

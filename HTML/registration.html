@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>registration page </title>
+    <h1> my registration form</h1><br><br>
+</head>
+
+<body>
+
+
+    <table style="width:100%">
+
+        <tr>
+            <td>first name <input type="text" id="fname" name="fname"></td>
+        </tr>
+        <tr>
+            <td>last name <input type="text" id="fname" name="fname"></td>
+        </tr>
+        <tr>
+            <td> email <input type="email" id="email" name="email"></td>
+        </tr>
+        <tr>
+            <td>Password <input type="password" id="pwd" name="pwd"></td>
+        </tr>
+        <tr>
+            <td>PW confirm <input type="password" id="pwd" name="pwd"></td>
+        </tr>
+        <tr>
+            <td>Birthday <input type="date" id="birthday" name="birthday"></td>
+        </tr>
+    </table><br>
+    <form action="/action_page.php"></form>
+    <label for="male">Male </label>
+    <input type="radio" name="gender" id="male" value="male">
+    <label for="female">Female </label>
+    <input type="radio" name="gender" id="female" value="female">
+    <label for="other">Other </label>
+    <input type="radio" name="gender" id="other" value="other">
+    </form><br><br>
+
+    <label for="shortdescription">A short description about yourself</label><br>
+    <textarea id="shortdescription" name="shortdescription" rows="4" cols="50">
+     
+      </textarea><br>
+
+    <form name="form1" id="form1" action="/action_page.php">
+        Favorite language <select name="subject" id="subject">
+            <option value="" selected="selected">Java</option>
+            <option value="" selected="selected">Java script</option>
+            <option value="" selected="selected">python</option>
+          </select>
+        <br><br>
+        <input type="submit" value="Submit">
+
+</body>
+
+</html>

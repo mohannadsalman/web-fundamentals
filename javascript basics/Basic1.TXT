@@ -1,0 +1,133 @@
+1)function getnumbers() {
+    var arr = [];
+    for (var i = 1; i <= 255; i++) {
+        arr.push(i);
+    }
+    return arr;
+}
+/////////////////////////////////////////
+2)function geteven() {
+    var sum = 0;
+    for (var i = 1; i <= 1000; i++) {
+        if (i % 2 === 0) {
+            sum += i;
+            console.log(sum);
+        }
+    }
+    return sum;
+}
+/////////////////////////////////////
+3)function odd() {
+    var sum = 0;
+    for (var i = 1; i <= 5000; i++) {
+        if (i % 2 != 0) {
+            sum += i;
+        }
+    }
+    return sum;
+}
+///////////////////////////////////////////////
+4)function Array(a) {
+    var sum = 0;
+    for (var i = 0; i < a.length; i++) {
+        sum += a[i];
+    }
+    return sum;
+}
+/////////////////////////////////////////////
+5)function maxnum(a) {
+    var max = a[0];
+    for (var i = 1; i < a.length; i++) {
+        if (a[i] > max) {
+            max = a[i]
+        }
+    }
+    return max;
+}
+////////////////////////////////////////////
+6)function avg(array) {
+    var sum = 0;
+    for (var i = 0; i < array.length; i++) {
+        sum += array[i];
+    }
+
+    return sum/array.length;
+}
+///////////////////////////////////////////
+7)function arrodd(array) {
+    var newarray = [];
+    for (var i = 1; i < 51; i++) {
+        if (i % 2 != 0) {
+            newarray.push(i);
+        }
+    }
+    return newarray;
+}
+/////////////////////////////////////////////
+8)function bigerthany(array, y) {
+    var counter = 0;
+    for (var i = 0; i < array.length; i++) {
+        if (array[i] > y) {
+            counter += 1;
+        }
+    }
+    return counter;
+}
+////////////////////////////////////////////
+9)function square(array) {
+    for (var i = 0; i < array.length; i++) {
+        array[i] = array[i] * array[i];
+    }
+    return array;
+}
+/////////////////////////////////////////////
+10)
+function becomezero(a) {
+    for (var i = 0; i < a.length; i++) {
+        if (a[i] < 0) {
+            a[i] = 0;
+        }
+    }
+    return a;
+}
+////////////////////////////////////////////
+11)function numbers(a) {
+    var min = a[0];
+    var max = a[0];
+    var sum = 0;
+    var avg = 0;
+
+    for (var i = 0; i < a.length; i++) {
+        if (a[i] > max) {
+            max = a[i]
+        }
+        else if (a[i] < min) {
+            min = a[i]
+        }
+
+        sum += a[i];
+    }
+
+    avg = sum /a.length;
+    var array = [max, min, avg];
+    return array;
+}
+/////////////////////////////////////////
+12)unction changevalue(array) {
+    var temp = 0;
+
+    temp = array[0];
+    array[0] = array[array.length - 1];
+    array[array.length - 1] = temp;
+
+    return array;
+}
+/////////////////////////////////////////
+13)function string(a) {
+    for (var i = 0; i < a.length; i++) {
+        if (a[i] < 0) {
+            a[i] = 'Dojo';
+        }
+    }
+    return a;
+}

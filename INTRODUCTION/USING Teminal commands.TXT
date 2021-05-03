@@ -1,0 +1,10 @@
+1.mkdir test
+2.cd test
+3.type index.html type nul>style.css  type nul>command.txt
+4.copy index.html index2.html
+5.mkdir destination
+6.move index2.html c:\users\mohan\desktop\destination
+7.del style.css
+8.dir
+9.del destination
+10.dir command.txt

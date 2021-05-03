@@ -1,0 +1,30 @@
+.nav {
+    background-color: dodgerblue;
+    height: 80px;
+    display: flex;
+    color: floralwhite;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    height: 60px;
+    margin: 10px;
+}
+
+h1 {
+    flex: 1;
+    text-align: center;
+}
+
+ul {
+    justify-content: space-between;
+    list-style-type: none;
+    display: flex;
+    flex: 2;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}

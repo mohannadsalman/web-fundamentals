@@ -1,0 +1,180 @@
+1.
+function Big(array) {
+    for (var i = 0; i < array.length; i++) {
+        if (array[i] > 0) {
+            array[i] = 'big';
+        }
+    }
+    return array;
+}
+/////////////////////////////////////////////////////////////////
+2. 
+function LowHigh(a) {
+    var high = a[0];
+    var low = a[0]
+    for (var i = 1; i < a.length; i++) {
+        if (a[i] > high) {
+            high = a[i];
+        }
+        if (a[i] < low) {
+            low = arr[i];
+        }
+    }
+    console.log(low)
+    return high;
+}
+////////////////////////////////////////////////
+3. 
+function returnAnother(a) {
+    var sectolast = a[a.length - 2];
+    for (var i = 0; i < a.length; i++) {
+        if (a[i] % 2 != 0) {
+            Odd = a[i];
+            break;
+        }
+    }
+    console.log(sectolast);
+    return Odd;
+}
+////////////////////////////////////////////////
+ 4.
+function double(a) {
+    for (var i = 0; i < a.length; i++) {
+        a[i] = a[i] * 2;
+    }
+    return a;
+}
+////////////////////////////////////////////////
+ 5. 
+function positive(a) {
+    var count = 0;
+    for (var i = 0; i < a.length; i++) {
+        if (a[i] > 0) {
+            count += 1;
+        } 
+    }
+    a[a.length - 1] = count;
+    return a;
+}
+////////////////////////////////////////////////
+6. 
+function evenodd(a) {
+    var oddCount = 0;
+    var evenCount = 0;
+    for (var i = 0; i < a.length; i++) {
+        if (a[i] === 0) { 
+            continue;
+        } else if (a[i] % 2 != 0) { 
+            oddCount += 1;
+            if (oddCount === 3) {
+                console.log("That's odd");
+                oddCount= 0;
+                evenCount= 0;
+            }
+        } else {  
+            evenCount += 1;
+            if (evenCount === 3) {
+                console.log("Even more");
+                evenCount= 0;
+                oddCount = 0;
+            }
+        }
+    }
+}
+////////////////////////////////////////////////
+7.
+function increment(a) {
+    for (var i = 0; i < a.length; i++) {
+        if (i % 2 != 0) {
+            a[i] = a[i] + 1;
+        }
+        console.log(a[i]);
+    }
+    return a;
+}
+
+////////////////////////////////////////////////
+ 8. 
+function previous(a) {
+    var newarray = [];
+    for (var i = 0; i < a.length; i++) {
+        newarray[i] = a[i].length;
+    }
+    for (var n = 1, x = 0; n < a.length; n++, x++) {
+        a[n] = newarray[x];
+    }
+
+    return a;
+}
+
+////////////////////////////////////////////////
+ 9. 
+function addeven(a) {
+    var newarray = [];
+    newarray[0] = a[0];
+    for (var i = 1; i < a.length; i++) {
+        newarray[i] = a[i] + 7;
+    }
+    return newarray;
+}
+
+////////////////////////////////////////////////
+10.  
+function reversearr(a) {
+    var temp = a[0];
+    for (var i = 0, x = (a.length - 1); i < a.length; i++, x--) {
+        temp = a[i];
+        arr[i] = a[x];
+        arr[x] = temp;
+    }
+    return a;
+}
+////////////////////////////////////////////////
+
+ 11. 
+function negative(a) {
+    var newarray = [];
+    for (var i = 0; i < a.length; i++) {
+        newarray[i] = -Math.abs(a[i]);
+    }
+    return newarray;
+}
+////////////////////////////////////////////////
+ 12.  
+function Hungry(a) {
+    var count = 0;
+    for (var i = 0; i < a.length; i++) {
+        if (a[i] == 'food') {
+            console.log('yummy');
+            count += 1;
+        }
+    }
+    if (count === 0) {
+        console.log("I'm hungry");
+    }
+    return;
+}
+////////////////////////////////////////////////
+ 13.
+function swapcenter(a) {
+    var temp = a[0];
+    for (var i = 0, x = (a.length - 1); i < x; i++, x--) {
+        if (i === 0 || i % 2 === 0) {
+            temp = a[i];
+            console.log(temp);
+            a[i] = a[x];
+            a[x] = temp;
+            console.log(a);
+        } 
+    }
+    return a;
+}
+////////////////////////////////////////////////
+
+14.
+function scale(a, y) {
+    for (var i = 0; i < a.length; i++) {
+        a[i] = a[i] * y;
+    }
+    return a;
+} 
